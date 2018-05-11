@@ -38,20 +38,4 @@ ALTER TABLE model_draft.corr_mv_bus_results
 ALTER TABLE model_draft.corr_mv_bus_results
 	ADD COLUMN q double precision[];
 
--- Etrago Result tables
-CREATE TABLE IF NOT EXISTS model_draft.corr_hv_lines_results 
-	AS (SELECT * FROM model_draft.ego_grid_pf_hv_result_line
-		WHERE 1=2);
-
-CREATE TABLE IF NOT EXISTS model_draft.corr_hv_lines_t_results 
-	AS (SELECT * FROM model_draft.ego_grid_pf_hv_result_line_t
-		WHERE 1=2);	
-
-CREATE TABLE IF NOT EXISTS model_draft.corr_hv_bus_results 
-	AS (SELECT * FROM model_draft.ego_grid_pf_hv_result_bus
-		WHERE 1=2);
-
-CREATE TABLE IF NOT EXISTS model_draft.corr_hv_bus_t_results 
-	AS (SELECT * FROM model_draft.ego_grid_pf_hv_result_bus_t
-		WHERE 1=2);
 
